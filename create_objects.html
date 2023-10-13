@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+    <body>
+      <h1>Creating JavaScript Objects</h1>
+      <p id="demo"></p>
+      <script>
+        var student = {
+          name: "Magdaline",
+          age: 24,
+          school: "UON",
+        };
+        document.getElementById("demo").innerHTML =
+          student.name +
+          " of the age " +
+          student.age +
+          " studies at " +
+          student.school;
+      </script>
+
+      <script>
+        var student = new Object();
+        (student.name = "Magdaline"),
+          (student.age = 24),
+          (student.school = UON);
+        document.getElementById("demo").innerHTML =
+          student.name +
+          " of the age " +
+          student.age +
+          " studies at " +
+          student.school;
+      </script>
+    </body>
+  </head>
+</html>
