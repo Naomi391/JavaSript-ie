@@ -17,12 +17,25 @@
       tails
     </button>
     <script>
+      const score = JSON.parse(localStorage.getItem("score")) || {
+        wins: 0,
+        losses: 0,
+      };
       function computerMove(guess) {
         const randomNumber = Math.random();
         const result = randomNumber < 0.5 ? "heads" : "tails";
 
         console.log(guess === result ? "You win!" : "You lose!");
       }
+
+      if (computerMove === "heads") {
+        score.wins += 1;
+      } else if (computerMove === "tails") {
+        score.losses += 1;
+      }
+      localStorage.setItem("score", JSON.stringify(score));
+
+      console.log(score);
     </script>
   </body>
 </html>
