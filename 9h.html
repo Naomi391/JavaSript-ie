@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9h Exercise</title>
+  </head>
+  <body>
+    <input
+      placeholder="Type something"
+      class="js-type-here"
+      onkeyup="
+      const inputElement = document.querySelector('.js-type-here');
+      document.querySelector('.js-show-text').innerHTML = inputElement.value;
+      "
+    />
+    <p class="js-show-text"></p>
+  </body>
+  <script></script>
+</html>
