@@ -4,10 +4,21 @@
     <title>9d Exercise</title>
   </head>
   <body>
-    <input placeholder="Name" class="js-name" />
+    <input
+      placeholder="Name"
+      class="js-name"
+      onkeydown="
+      if (event.key === 'Enter'){
+        const inputElement = document.querySelector('.js-name');
+
+    document.querySelector('.js-result').innerHTML = `Your name is: ${inputElement.value}`;
+      }
+      "
+    />
 
     <button
       onclick="
+      
     const inputElement = document.querySelector('.js-name');
 
     document.querySelector('.js-result').innerHTML = `Your name is: ${inputElement.value}`;
