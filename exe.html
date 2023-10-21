@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SUBMIT</title>
+  </head>
+  <body>
+    <input placeholder="Insert your name here" class="js-namesis" onkeydown="
+      if (event.key === 'Enter') {
+        displayName();
+        
+      }
+      ">
+    <button onclick="
+   displayName();
+    ">Submit</button>
+    <p class="js-namepar"></p>
+  <script>
+    function displayName () {
+      const nameElement = document.querySelector('.js-namesis');
+   document.querySelector('.js-namepar').innerHTML = `Your name is: ${nameElement.value}`;
+    }
+  </script>
+</html>
