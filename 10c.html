@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <!--
+      This creates the HTML button
+    -->
+    <button class="js-button">Test</button>
+  </body>
+  <script>
+    /*
+    This code checks whether the button has a class
+    */
+    const buttonElement = document.querySelector(".js-button");
+
+    if (buttonElement.classList.contains("js-button")) {
+      console.log("It has a class");
+    } else {
+      console.log("The button does not have a class");
+    }
+  </script>
+</html>
