@@ -2,25 +2,7 @@
 <html>
   <head>
     <title>YouTube Button project</title>
-    <style>
-      body {
-        font-family: Arial;
-      }
-      .subs-button {
-        border: none;
-        background-color: black;
-        color: white;
-        padding: 10px 15px;
-        font-weight: bold;
-        border-radius: 50px;
-        cursor: pointer;
-      }
-
-      .is-subscribed {
-        background-color: rgb(240, 240, 240);
-        color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/10-subscribe-button.css" />
   </head>
   <body>
     <p>YouTube Subscribe Button</p>
@@ -33,18 +15,6 @@
       Subscribe
     </button>
 
-    <script>
-      function subscribe() {
-        const buttonElement = document.querySelector(".js-subscribe-button");
-
-        if (buttonElement.innerText === "Subscribe") {
-          buttonElement.innerHTML = "Subscribed";
-          buttonElement.classList.add("is-subscribed");
-        } else {
-          buttonElement.innerHTML = "Subscribe";
-          buttonElement.classList.remove("is-subscribed");
-        }
-      }
-    </script>
+    <script src="scripts/10-subscribe-button.js"></script>
   </body>
 </html>
