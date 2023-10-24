@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+  font-family: Arial;
+}
+
+.show-result {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.the-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  border: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.gray-ones {
+  background-color: gray;
+}
+
+.yellow-ones {
+  background-color: rgb(254, 160, 10);
+}
+
+.clear {
+  font-size: 15px;
+}
