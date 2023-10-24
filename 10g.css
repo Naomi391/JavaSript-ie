@@ -1,0 +1,14 @@
+.gaming-button {
+  background-color: rgb(211, 210, 210);
+  color: black;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.js-toggled {
+  color: white;
+  background-color: black;
+}
