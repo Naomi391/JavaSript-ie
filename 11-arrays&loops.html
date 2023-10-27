@@ -63,12 +63,32 @@
       }
       */
 
+      /*
       const theList = ["call Mom", "make some fruit platters", "call bro"];
 
-      let index = 0;
-      for (index = 0; theList.length - 1; index++) {
-        console.log(index);
+      for (let i = 0; i < theList.length; i++) {
+        const activities = theList[i];
+        console.log(activities);
       }
+      */
+
+      //Accumulator Pattern
+      const nums = [1, 2, 3];
+      let sum = 0; //Change to let as it is a changing one
+
+      for (let i = 0; i < nums.length; i++) {
+        const total = nums[i];
+        sum += total;
+      }
+      console.log(sum);
+
+      const numsDoubled = [];
+
+      for (i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        numsDoubled.push(num * 2);
+      }
+      console.log(numsDoubled);
     </script>
   </body>
 </html>
