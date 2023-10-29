@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11i Exercise</title>
+  </head>
+  <body></body>
+  <script>
+    const number = [1, 2, 3];
+    const number1 = [-2, -1, 0, 99];
+
+    function addOne(array, num) {
+      const newArray = [];
+
+      for (i = 0; i < array.length; i++) {
+        newArray.push(array[i] + num);
+      }
+      return newArray;
+    }
+    const newNumber = addOne(number, 2);
+    const newNumber2 = addOne(number, 3);
+    const newNumber3 = addOne(number1, 2);
+
+    console.log(newNumber);
+    console.log(newNumber2);
+    console.log(newNumber3);
+  </script>
+</html>
