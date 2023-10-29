@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11b Exercise</title>
+  </head>
+  <body></body>
+  <script>
+    const nums = [10, 20, 30];
+    const greetings = ["Ola", "Habari", "Good morning"];
+    const name = ["Fibz", "Pish", "Ngure"];
+
+    function getLastValue(array) {
+      if (array.length - 1) {
+        return array[array.length - 1];
+      }
+    }
+    const lastNum = getLastValue(nums);
+    const lastGreeting = getLastValue(greetings);
+    const lastName = getLastValue(name);
+
+    console.log(lastNum);
+    console.log(lastGreeting);
+    console.log(lastName);
+  </script>
+</html>
