@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11k Exercise</title>
+  </head>
+  <body></body>
+  <script>
+    const num = [1, -3, 5];
+    const num1 = [-2, 3, -5, 7, 10];
+
+    function countPositive(nums) {
+      let count = 0;
+
+      for (let i = 0; i < nums.length; i++) {
+        if (nums[i] > 0) {
+          count++;
+        }
+      }
+      return count;
+    }
+
+    const posNum = countPositive(num);
+    const posNum1 = countPositive(num1);
+
+    console.log(posNum);
+    console.log(posNum1);
+  </script>
+</html>
