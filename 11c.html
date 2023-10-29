@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11c Exercise</title>
+    <body></body>
+    <script>
+      const arrayNums = [10, 20, 30];
+      const arrayName = ["Aleph", "Mos", "Tas"];
+
+      function arraySwap(array) {
+        if (array) {
+          return array.reverse(array);
+        } else {
+          return array;
+        }
+      }
+
+      const revNums = arraySwap(arrayNums);
+      const revName = arraySwap(arrayName);
+
+      console.log(revNums);
+      console.log(revName);
+    </script>
+  </head>
+</html>
