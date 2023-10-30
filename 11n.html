@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11n Exercise</title>
+  </head>
+  <body></body>
+  <script>
+    function countWords(words) {
+      const result = {};
+
+      for (let i = 0; i < words.length; i++) {
+        const myWord = words[i];
+
+        if (!result[myWord]) {
+          result[myWord] = 1;
+        } else {
+          result[myWord]++;
+        }
+      }
+      return result;
+    }
+
+    console.log(countWords(["apple", "grape", "apple", "apple"]));
+  </script>
+</html>
