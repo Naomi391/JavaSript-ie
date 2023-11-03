@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11t Exercise</title>
+  </head>
+  <script>
+    function removeEgg(foods) {
+      const revFoods = foods.reverse();
+      const result = [];
+      let eggsRemoved = 0;
+
+      for (let i = 0; i < revFoods.length; i++) {
+        if (revFoods[i] === "egg" && eggsRemoved < 2) {
+          eggsRemoved++;
+          continue;
+        }
+        result.push(revFoods[i]);
+      }
+      return result.reverse();
+    }
+    console.log(removeEgg(["egg", "apple", "egg", "egg", "ham"]));
+  </script>
+</html>
