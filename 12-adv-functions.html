@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <script>
+      /*
+      function greeting() {
+        console.log("Habari");
+      }
+      greeting();
+
+      const function1 = function greeting() {
+        console.log("Hello");
+      };
+      console.log(function1);
+      console.log(typeof function1);
+      function1();
+
+      //Anonymous function (doesn't have a name)
+      const function2 = function () {
+        console.log("Hello");
+      };
+
+      const object1 = {
+        num: 3,
+        //You can remove the function name - it'll still work
+        fun: function () {
+          console.log("Hey");
+        },
+      };
+      object1.fun();
+
+      //Pasing a value into a function
+      function display(param) {
+        console.log(param);
+      }
+      display(2);
+
+      //Passing a function into a function
+      function run(param) {
+        param();
+      }
+      run(function () {
+        console.log("Heyyy");
+      });
+
+      //Functions are values. Anything I can do to a value, I can do to a function
+      */
+
+      setTimeout(function () {
+        console.log("Time out");
+        console.log("Time out 2");
+      }, 3000);
+
+      console.log("Neeext");
+
+      setInterval(function () {
+        console.log("Interval");
+      }, 3000);
+
+      console.log("Next line after interval");
+    </script>
+  </body>
+</html>
